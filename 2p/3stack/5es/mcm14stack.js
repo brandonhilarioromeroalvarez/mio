@@ -57,3 +57,10 @@ console.log("length: " + s.length())
 console.log(s.peek())
 s.push("Clayton")
 console.log(s.peek())
+for(let c=0;c<=9;c++){
+  var r=Math.floor(Math.random() * 10);
+    console.log(r);
+}
+let s=new Stack();
+
+//console.log(r);
