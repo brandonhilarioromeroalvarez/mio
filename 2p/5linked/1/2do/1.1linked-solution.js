@@ -16,9 +16,9 @@ function getTail(){
   return this.tail;
 }
 
-function Linked(n) {
-    this.head = n
-    this.tail = n
+function Linked(num) {
+    this.head = num
+    this.tail = num
     this.size = 1
 
     this.getHead = getHead
@@ -30,24 +30,24 @@ function Linked(n) {
 
 function getHead(){return this.head}
 
-function prepend(n){
-    n.next = this.head
-    this.head=n
+function prepend(num){
+    num.next = this.head
+    this.head=num
     this.size++
 }
 
-function append(n){
-    n.next = null
-    this.tail.next=n
-    this.tail=n
+function append(num){
+    num.next = null
+    this.tail.next=num
+    this.tail=num
     this.size++
 }
 
 function traverse(){
-    let c=this.head
-    while(c){
-	console.log(c.data)
-	c=c.next
+    let t=this.head
+    while(t){
+	console.log(t.data)
+	t=t.next
     }
     console.log('\n')
 }

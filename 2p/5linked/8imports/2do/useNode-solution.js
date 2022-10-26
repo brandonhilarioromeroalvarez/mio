@@ -30,10 +30,10 @@ function append(n){
 }
 
 function traverse(){
-    let c=this.head
-    while(c){
-	console.log(c.data)
-	c=c.next
+    let t=this.head
+    while(t){
+	console.log(t.data)
+	t=t.next
     }
     console.log('\n')
 }
@@ -43,12 +43,12 @@ function traverse(){
 //
 
 function contains(k){
-  let c = this.head;
-  while(c){
-    if(c.key === k){
+  let t = this.head;
+  while(t){
+    if(t.key === k){
       return true
     }
-    c = c.next
+    t = t.next
   }
   return false
 }
@@ -60,30 +60,30 @@ function getTail(){
   return this.tail;
 }
 function insertAfter(nN, k) {
-  let c = this.head
-  while (c) {
-    if (c.key === k) {
-      nN.next = c.next;
-      c.next = nN
+  let ia = this.head
+  while (ia) {
+    if (ia.key === k) {
+      nN.next = ia.next;
+      ia.next = nN
       this.size++
       return true
     }
-    c = c.next
+    ia = ia.next
   }
   return false
 }
 
 
 function insertBefore(nN, k) {  
-  let c = this.head
-  while (c) {
-    if (c.next.key === k) { 
-      nN.next = c.next  
-      c.next = nN
+  let ib = this.head
+  while (ib) {
+    if (ib.next.key === k) { 
+      nN.next = ib.next  
+      ib.next = nN
       this.size++
       return true  
     }
-    c = c.next 
+    ib = ib.next 
   }
   return false   
 }
