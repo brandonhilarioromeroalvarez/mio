@@ -43,5 +43,14 @@ function traverse(){
 //
 // exercises
 //
-function contains(v){}
+function contains(v){
+    let c=this.head
+    while(c){//exists
+      if(c.data == data){
+      console.log("El dato : " + data + " si existe")
+      return true }
+	c=c.next
+  } console.log("El dato que busca no fue creado")
+      return false;
+}
 function getTail(){}
