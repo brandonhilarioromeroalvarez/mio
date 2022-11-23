@@ -25,12 +25,16 @@
 // call
 // factorial(3) returns 6
 function fibonacci(n) {
-    if (n < 5) {//base case
-      return
-    } else{
-        console.log(n)
-        return(fibonacci(n + 1))//recursive call
+    if (n < 2) {//base case
+      return n
     }
+        return fibonacci(n - 1)+fibonacci(n-2)//recursive call
+}
+console.log(fibonacci(0))
+console.log(fibonacci(2))
+console.log(fibonacci(3))
+console.log(fibonacci(4))
+console.log(fibonacci(5))
+power(p){
   
 }
-fibonacci(0)
