@@ -24,3 +24,13 @@
 //
 // call
 // factorial(3) returns 6
+function fibonacci(n) {
+    if (n < 5) {//base case
+      return
+    } else{
+        console.log(n)
+        return(fibonacci(n + 1))//recursive call
+    }
+  
+}
+fibonacci(0)
