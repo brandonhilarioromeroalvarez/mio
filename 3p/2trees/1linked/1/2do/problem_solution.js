@@ -6,7 +6,7 @@ function Node(o){
 
 let p = new Node('+')
 let o1 = new Node(3)
-let o2 = new Node(-1)
+let o2 = new Node('*')
 let q1= new Node(-2)
 let q2=new Node(7)
 p.l = o1
